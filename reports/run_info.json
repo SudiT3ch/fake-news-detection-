@@ -1,0 +1,30 @@
+{
+  "dataset": {
+    "rows_in": 44898,
+    "after_empty_removed": 44889,
+    "rows_out": 38825,
+    "label_counts": {
+      "Real News": 20925,
+      "Fake News": 17900
+    },
+    "train_size": 31060,
+    "test_size": 7765
+  },
+  "selected_model": "tfidf+logreg",
+  "selection_rule": "highest CV macro-F1 on train split",
+  "confusion_matrix_labels": [
+    "Fake News",
+    "Real News"
+  ],
+  "selected_confusion_matrix": [
+    [
+      3540,
+      40
+    ],
+    [
+      25,
+      4160
+    ]
+  ],
+  "selected_report": "              precision    recall  f1-score   support\n\n   Fake News       0.99      0.99      0.99      3580\n   Real News       0.99      0.99      0.99      4185\n\n    accuracy                           0.99      7765\n   macro avg       0.99      0.99      0.99      7765\nweighted avg       0.99      0.99      0.99      7765\n"
+}
